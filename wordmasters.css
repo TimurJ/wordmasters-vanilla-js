@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  border-bottom: solid 2px black;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.words-grid {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.words-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+}
+
+.letter-container {
+  border: solid 3px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+}
+
+.correct-letter {
+  background-color: lightgreen;
+}
+
+.semi-correct-letter {
+  background-color: yellow;
+}
+
+.incorrect-letter {
+  background-color: lightgray;
+}
